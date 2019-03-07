@@ -23,8 +23,7 @@ export class GameScene extends Phaser.Scene {
 
   preload(): void {
     this.load.setBaseURL(
-      "https://raw.githubusercontent.com/stephenunder/" +
-      "starfall/");
+      "https://raw.githubusercontent.com/stephenunder/starfall/master/");
       this.load.image("star", "assets/star.png");
       this.load.image("sand", "assets/sand.jpg");
   }
