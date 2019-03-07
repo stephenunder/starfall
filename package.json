@@ -1,0 +1,20 @@
+{
+  "name": "starfall",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Starfall game (Phaser 3 + TypeScript)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephen Underwood",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "phaser": "^3.16.2",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
