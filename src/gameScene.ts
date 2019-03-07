@@ -23,8 +23,8 @@ export class GameScene extends Phaser.Scene {
 
   preload(): void {
     this.load.setBaseURL(
-      "https://raw.githubusercontent.com/mariyadavydova/" +
-      "starfall-phaser3-typescript/master/");
+      "https://raw.githubusercontent.com/stephenunder/" +
+      "starfall/");
       this.load.image("star", "assets/star.png");
       this.load.image("sand", "assets/sand.jpg");
   }
@@ -43,7 +43,7 @@ export class GameScene extends Phaser.Scene {
   }
 
   update(time: number): void {
-    var diff: number = time - this.lastStarTime;
+    let diff: number = time - this.lastStarTime;
     if (diff > this.delta) {
       this.lastStarTime = time;
       if (this.delta > 500) {
@@ -79,9 +79,9 @@ export class GameScene extends Phaser.Scene {
   }
 
   private emitStar(): void {
-    var star: Phaser.Physics.Arcade.Image;
-    var x = Phaser.Math.Between(25, 775);
-    var y = 26;
+    let star: Phaser.Physics.Arcade.Image;
+    const x = Phaser.Math.Between(25, 775);
+    const y = 26;
     star = this.physics.add.image(x, y, "star");
 
     star.setDisplaySize(50, 50);

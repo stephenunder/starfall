@@ -26,5 +26,5 @@ export class StarfallGame extends Phaser.Game {
 }
 
 window.onload = () => {
-  var game = new StarfallGame(config);
+  const game = new StarfallGame(config);
 };
